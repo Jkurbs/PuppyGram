@@ -47,7 +47,6 @@ class PuppyCell: UICollectionViewCell {
         addSubview(nameLabel)
         addSubview(dateLabel)
         imageView.addSubview(alphaView)
-        imageView.addSubview(likeButton)
 
         imageView.contentMode = .scaleAspectFill
         imageView.clipsToBounds = true
@@ -59,16 +58,7 @@ class PuppyCell: UICollectionViewCell {
         alphaView.translatesAutoresizingMaskIntoConstraints = false
         nameLabel.translatesAutoresizingMaskIntoConstraints = false
         dateLabel.translatesAutoresizingMaskIntoConstraints = false
-        
-        
-        let boldLargeConfig = UIImage.SymbolConfiguration(pointSize: UIFont.systemFontSize, weight: .bold, scale: .large)
-        let smallConfig = UIImage.SymbolConfiguration(scale: .large)
-        let boldSmallConfig = boldLargeConfig.applying(smallConfig)
-        
-        let heartImage = UIImage(systemName: "heart", withConfiguration: boldSmallConfig)
-        let redHeartImage = heartImage?.withTintColor(.white, renderingMode: .alwaysOriginal)
-        likeButton.setImage(redHeartImage, for: .normal)
-        
+
         NSLayoutConstraint.activate([
             imageView.topAnchor.constraint(equalTo: self.topAnchor, constant: 0),
             imageView.leftAnchor.constraint(equalTo: self.leftAnchor, constant: 20),
