@@ -10,6 +10,8 @@
 		30F452D547C0F01894B3E63C /* Pods_PuppyGram.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5AE9B01509631C0AEE5779D9 /* Pods_PuppyGram.framework */; };
 		6D5ED596264B65A200CAE92D /* PuppyCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D5ED595264B65A200CAE92D /* PuppyCell.swift */; };
 		6D5ED5A6264B943700CAE92D /* UIColor+Pallete.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D5ED5A5264B943700CAE92D /* UIColor+Pallete.swift */; };
+		6DBDAAFD264C55CC00411F2E /* Date+String.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DBDAAFC264C55CC00411F2E /* Date+String.swift */; };
+		6DBDAB07264C5F3500411F2E /* ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DBDAB06264C5F3500411F2E /* ViewModel.swift */; };
 		6DC318D7264B284D00964195 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DC318D6264B284D00964195 /* AppDelegate.swift */; };
 		6DC318D9264B284D00964195 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DC318D8264B284D00964195 /* SceneDelegate.swift */; };
 		6DC318DB264B284D00964195 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DC318DA264B284D00964195 /* ViewController.swift */; };
@@ -49,6 +51,8 @@
 		5AE9B01509631C0AEE5779D9 /* Pods_PuppyGram.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PuppyGram.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		6D5ED595264B65A200CAE92D /* PuppyCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PuppyCell.swift; sourceTree = "<group>"; };
 		6D5ED5A5264B943700CAE92D /* UIColor+Pallete.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+Pallete.swift"; sourceTree = "<group>"; };
+		6DBDAAFC264C55CC00411F2E /* Date+String.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Date+String.swift"; sourceTree = "<group>"; };
+		6DBDAB06264C5F3500411F2E /* ViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModel.swift; sourceTree = "<group>"; };
 		6DC318D3264B284D00964195 /* PuppyGram.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PuppyGram.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6DC318D6264B284D00964195 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		6DC318D8264B284D00964195 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -110,9 +114,18 @@
 		6D5ED5A4264B941F00CAE92D /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
+				6DBDAAFC264C55CC00411F2E /* Date+String.swift */,
 				6D5ED5A5264B943700CAE92D /* UIColor+Pallete.swift */,
 			);
 			path = Extensions;
+			sourceTree = "<group>";
+		};
+		6DBDAB05264C5CDE00411F2E /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				6DBDAB06264C5F3500411F2E /* ViewModel.swift */,
+			);
+			path = ViewModel;
 			sourceTree = "<group>";
 		};
 		6DC318CA264B284D00964195 = {
@@ -140,6 +153,7 @@
 		6DC318D5264B284D00964195 /* PuppyGram */ = {
 			isa = PBXGroup;
 			children = (
+				6DBDAB05264C5CDE00411F2E /* ViewModel */,
 				6D5ED5A4264B941F00CAE92D /* Extensions */,
 				6D5ED594264B658200CAE92D /* Views */,
 				6DC31919264B416200964195 /* Model */,
@@ -459,9 +473,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				6D5ED596264B65A200CAE92D /* PuppyCell.swift in Sources */,
+				6DBDAB07264C5F3500411F2E /* ViewModel.swift in Sources */,
 				6DC318DB264B284D00964195 /* ViewController.swift in Sources */,
 				6DC31912264B317D00964195 /* Services.swift in Sources */,
 				6D5ED5A6264B943700CAE92D /* UIColor+Pallete.swift in Sources */,
+				6DBDAAFD264C55CC00411F2E /* Date+String.swift in Sources */,
 				6DC318D7264B284D00964195 /* AppDelegate.swift in Sources */,
 				6DC3191B264B416E00964195 /* Puppy.swift in Sources */,
 				6DC318D9264B284D00964195 /* SceneDelegate.swift in Sources */,
