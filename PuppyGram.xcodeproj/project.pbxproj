@@ -1,0 +1,808 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 51;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		30F452D547C0F01894B3E63C /* Pods_PuppyGram.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5AE9B01509631C0AEE5779D9 /* Pods_PuppyGram.framework */; };
+		6D5ED596264B65A200CAE92D /* PuppyCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D5ED595264B65A200CAE92D /* PuppyCell.swift */; };
+		6D5ED5A6264B943700CAE92D /* UIColor+Pallete.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D5ED5A5264B943700CAE92D /* UIColor+Pallete.swift */; };
+		6DC318D7264B284D00964195 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DC318D6264B284D00964195 /* AppDelegate.swift */; };
+		6DC318D9264B284D00964195 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DC318D8264B284D00964195 /* SceneDelegate.swift */; };
+		6DC318DB264B284D00964195 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DC318DA264B284D00964195 /* ViewController.swift */; };
+		6DC318DE264B284D00964195 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6DC318DC264B284D00964195 /* Main.storyboard */; };
+		6DC318E0264B285000964195 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6DC318DF264B285000964195 /* Assets.xcassets */; };
+		6DC318E3264B285000964195 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6DC318E1264B285000964195 /* LaunchScreen.storyboard */; };
+		6DC318EE264B285100964195 /* PuppyGramTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DC318ED264B285100964195 /* PuppyGramTests.swift */; };
+		6DC318F9264B285100964195 /* PuppyGramUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DC318F8264B285100964195 /* PuppyGramUITests.swift */; };
+		6DC31912264B317D00964195 /* Services.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DC31911264B317D00964195 /* Services.swift */; };
+		6DC3191B264B416E00964195 /* Puppy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DC3191A264B416E00964195 /* Puppy.swift */; };
+		95A2586BE91D49AB8AD0E711 /* Pods_PuppyGramTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4A5B112D803E929D48123CA2 /* Pods_PuppyGramTests.framework */; };
+		F4183B6F8536AE6AD9D606B4 /* Pods_PuppyGram_PuppyGramUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E92D987C8C9001EF8F479528 /* Pods_PuppyGram_PuppyGramUITests.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		6DC318EA264B285100964195 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 6DC318CB264B284D00964195 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 6DC318D2264B284D00964195;
+			remoteInfo = PuppyGram;
+		};
+		6DC318F5264B285100964195 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 6DC318CB264B284D00964195 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 6DC318D2264B284D00964195;
+			remoteInfo = PuppyGram;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		0225A703A5DB41A1D151BD53 /* Pods-PuppyGram-PuppyGramUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PuppyGram-PuppyGramUITests.debug.xcconfig"; path = "Target Support Files/Pods-PuppyGram-PuppyGramUITests/Pods-PuppyGram-PuppyGramUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		028833BD932BFE2AD4497E1C /* Pods-PuppyGram.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PuppyGram.debug.xcconfig"; path = "Target Support Files/Pods-PuppyGram/Pods-PuppyGram.debug.xcconfig"; sourceTree = "<group>"; };
+		4A5B112D803E929D48123CA2 /* Pods_PuppyGramTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PuppyGramTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		4AAF974C9F305F00ACD7A964 /* Pods-PuppyGram.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PuppyGram.release.xcconfig"; path = "Target Support Files/Pods-PuppyGram/Pods-PuppyGram.release.xcconfig"; sourceTree = "<group>"; };
+		5AE9B01509631C0AEE5779D9 /* Pods_PuppyGram.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PuppyGram.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		6D5ED595264B65A200CAE92D /* PuppyCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PuppyCell.swift; sourceTree = "<group>"; };
+		6D5ED5A5264B943700CAE92D /* UIColor+Pallete.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+Pallete.swift"; sourceTree = "<group>"; };
+		6DC318D3264B284D00964195 /* PuppyGram.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PuppyGram.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		6DC318D6264B284D00964195 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		6DC318D8264B284D00964195 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		6DC318DA264B284D00964195 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		6DC318DD264B284D00964195 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		6DC318DF264B285000964195 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		6DC318E2264B285000964195 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		6DC318E4264B285000964195 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6DC318E9264B285100964195 /* PuppyGramTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PuppyGramTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		6DC318ED264B285100964195 /* PuppyGramTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PuppyGramTests.swift; sourceTree = "<group>"; };
+		6DC318EF264B285100964195 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6DC318F4264B285100964195 /* PuppyGramUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PuppyGramUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		6DC318F8264B285100964195 /* PuppyGramUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PuppyGramUITests.swift; sourceTree = "<group>"; };
+		6DC318FA264B285100964195 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6DC31911264B317D00964195 /* Services.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Services.swift; sourceTree = "<group>"; };
+		6DC3191A264B416E00964195 /* Puppy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Puppy.swift; sourceTree = "<group>"; };
+		7CF6CE23F4BEA7B766FBADCF /* Pods-PuppyGramTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PuppyGramTests.debug.xcconfig"; path = "Target Support Files/Pods-PuppyGramTests/Pods-PuppyGramTests.debug.xcconfig"; sourceTree = "<group>"; };
+		A2F9249CAF9561107C21002B /* Pods-PuppyGram-PuppyGramUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PuppyGram-PuppyGramUITests.release.xcconfig"; path = "Target Support Files/Pods-PuppyGram-PuppyGramUITests/Pods-PuppyGram-PuppyGramUITests.release.xcconfig"; sourceTree = "<group>"; };
+		A7380C6F25B2CF3AECBF45A4 /* Pods-PuppyGramTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PuppyGramTests.release.xcconfig"; path = "Target Support Files/Pods-PuppyGramTests/Pods-PuppyGramTests.release.xcconfig"; sourceTree = "<group>"; };
+		E92D987C8C9001EF8F479528 /* Pods_PuppyGram_PuppyGramUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PuppyGram_PuppyGramUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		6DC318D0264B284D00964195 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				30F452D547C0F01894B3E63C /* Pods_PuppyGram.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6DC318E6264B285100964195 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				95A2586BE91D49AB8AD0E711 /* Pods_PuppyGramTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6DC318F1264B285100964195 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F4183B6F8536AE6AD9D606B4 /* Pods_PuppyGram_PuppyGramUITests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		6D5ED594264B658200CAE92D /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				6D5ED595264B65A200CAE92D /* PuppyCell.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		6D5ED5A4264B941F00CAE92D /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				6D5ED5A5264B943700CAE92D /* UIColor+Pallete.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		6DC318CA264B284D00964195 = {
+			isa = PBXGroup;
+			children = (
+				6DC318D5264B284D00964195 /* PuppyGram */,
+				6DC318EC264B285100964195 /* PuppyGramTests */,
+				6DC318F7264B285100964195 /* PuppyGramUITests */,
+				6DC318D4264B284D00964195 /* Products */,
+				EB1970A687E47E0A1EF391A0 /* Pods */,
+				D265B1317BC6CFCCAA738A1E /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		6DC318D4264B284D00964195 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				6DC318D3264B284D00964195 /* PuppyGram.app */,
+				6DC318E9264B285100964195 /* PuppyGramTests.xctest */,
+				6DC318F4264B285100964195 /* PuppyGramUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		6DC318D5264B284D00964195 /* PuppyGram */ = {
+			isa = PBXGroup;
+			children = (
+				6D5ED5A4264B941F00CAE92D /* Extensions */,
+				6D5ED594264B658200CAE92D /* Views */,
+				6DC31919264B416200964195 /* Model */,
+				6DC31910264B2E7C00964195 /* Services */,
+				6DC3190F264B2C3C00964195 /* ViewControllers */,
+				6DC318D6264B284D00964195 /* AppDelegate.swift */,
+				6DC318D8264B284D00964195 /* SceneDelegate.swift */,
+				6DC318DC264B284D00964195 /* Main.storyboard */,
+				6DC318DF264B285000964195 /* Assets.xcassets */,
+				6DC318E1264B285000964195 /* LaunchScreen.storyboard */,
+				6DC318E4264B285000964195 /* Info.plist */,
+			);
+			path = PuppyGram;
+			sourceTree = "<group>";
+		};
+		6DC318EC264B285100964195 /* PuppyGramTests */ = {
+			isa = PBXGroup;
+			children = (
+				6DC318ED264B285100964195 /* PuppyGramTests.swift */,
+				6DC318EF264B285100964195 /* Info.plist */,
+			);
+			path = PuppyGramTests;
+			sourceTree = "<group>";
+		};
+		6DC318F7264B285100964195 /* PuppyGramUITests */ = {
+			isa = PBXGroup;
+			children = (
+				6DC318F8264B285100964195 /* PuppyGramUITests.swift */,
+				6DC318FA264B285100964195 /* Info.plist */,
+			);
+			path = PuppyGramUITests;
+			sourceTree = "<group>";
+		};
+		6DC3190F264B2C3C00964195 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				6DC318DA264B284D00964195 /* ViewController.swift */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		6DC31910264B2E7C00964195 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				6DC31911264B317D00964195 /* Services.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		6DC31919264B416200964195 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				6DC3191A264B416E00964195 /* Puppy.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		D265B1317BC6CFCCAA738A1E /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				5AE9B01509631C0AEE5779D9 /* Pods_PuppyGram.framework */,
+				E92D987C8C9001EF8F479528 /* Pods_PuppyGram_PuppyGramUITests.framework */,
+				4A5B112D803E929D48123CA2 /* Pods_PuppyGramTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		EB1970A687E47E0A1EF391A0 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				028833BD932BFE2AD4497E1C /* Pods-PuppyGram.debug.xcconfig */,
+				4AAF974C9F305F00ACD7A964 /* Pods-PuppyGram.release.xcconfig */,
+				0225A703A5DB41A1D151BD53 /* Pods-PuppyGram-PuppyGramUITests.debug.xcconfig */,
+				A2F9249CAF9561107C21002B /* Pods-PuppyGram-PuppyGramUITests.release.xcconfig */,
+				7CF6CE23F4BEA7B766FBADCF /* Pods-PuppyGramTests.debug.xcconfig */,
+				A7380C6F25B2CF3AECBF45A4 /* Pods-PuppyGramTests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		6DC318D2264B284D00964195 /* PuppyGram */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6DC318FD264B285100964195 /* Build configuration list for PBXNativeTarget "PuppyGram" */;
+			buildPhases = (
+				B3A9AE33C846675BDC7CDE89 /* [CP] Check Pods Manifest.lock */,
+				6DC318CF264B284D00964195 /* Sources */,
+				6DC318D0264B284D00964195 /* Frameworks */,
+				6DC318D1264B284D00964195 /* Resources */,
+				DC11DF6DAF61DED22AAE04D0 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = PuppyGram;
+			productName = PuppyGram;
+			productReference = 6DC318D3264B284D00964195 /* PuppyGram.app */;
+			productType = "com.apple.product-type.application";
+		};
+		6DC318E8264B285100964195 /* PuppyGramTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6DC31900264B285100964195 /* Build configuration list for PBXNativeTarget "PuppyGramTests" */;
+			buildPhases = (
+				EE97EEB35060653DE190217A /* [CP] Check Pods Manifest.lock */,
+				6DC318E5264B285100964195 /* Sources */,
+				6DC318E6264B285100964195 /* Frameworks */,
+				6DC318E7264B285100964195 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				6DC318EB264B285100964195 /* PBXTargetDependency */,
+			);
+			name = PuppyGramTests;
+			productName = PuppyGramTests;
+			productReference = 6DC318E9264B285100964195 /* PuppyGramTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		6DC318F3264B285100964195 /* PuppyGramUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6DC31903264B285100964195 /* Build configuration list for PBXNativeTarget "PuppyGramUITests" */;
+			buildPhases = (
+				5BB8F69C1103F360536C6F26 /* [CP] Check Pods Manifest.lock */,
+				6DC318F0264B285100964195 /* Sources */,
+				6DC318F1264B285100964195 /* Frameworks */,
+				6DC318F2264B285100964195 /* Resources */,
+				36403E6928DE5506E2407350 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				6DC318F6264B285100964195 /* PBXTargetDependency */,
+			);
+			name = PuppyGramUITests;
+			productName = PuppyGramUITests;
+			productReference = 6DC318F4264B285100964195 /* PuppyGramUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		6DC318CB264B284D00964195 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1240;
+				LastUpgradeCheck = 1240;
+				TargetAttributes = {
+					6DC318D2264B284D00964195 = {
+						CreatedOnToolsVersion = 12.4;
+					};
+					6DC318E8264B285100964195 = {
+						CreatedOnToolsVersion = 12.4;
+						TestTargetID = 6DC318D2264B284D00964195;
+					};
+					6DC318F3264B285100964195 = {
+						CreatedOnToolsVersion = 12.4;
+						TestTargetID = 6DC318D2264B284D00964195;
+					};
+				};
+			};
+			buildConfigurationList = 6DC318CE264B284D00964195 /* Build configuration list for PBXProject "PuppyGram" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 6DC318CA264B284D00964195;
+			productRefGroup = 6DC318D4264B284D00964195 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				6DC318D2264B284D00964195 /* PuppyGram */,
+				6DC318E8264B285100964195 /* PuppyGramTests */,
+				6DC318F3264B285100964195 /* PuppyGramUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		6DC318D1264B284D00964195 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6DC318E3264B285000964195 /* LaunchScreen.storyboard in Resources */,
+				6DC318E0264B285000964195 /* Assets.xcassets in Resources */,
+				6DC318DE264B284D00964195 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6DC318E7264B285100964195 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6DC318F2264B285100964195 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		36403E6928DE5506E2407350 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-PuppyGram-PuppyGramUITests/Pods-PuppyGram-PuppyGramUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-PuppyGram-PuppyGramUITests/Pods-PuppyGram-PuppyGramUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-PuppyGram-PuppyGramUITests/Pods-PuppyGram-PuppyGramUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		5BB8F69C1103F360536C6F26 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-PuppyGram-PuppyGramUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B3A9AE33C846675BDC7CDE89 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-PuppyGram-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		DC11DF6DAF61DED22AAE04D0 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-PuppyGram/Pods-PuppyGram-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-PuppyGram/Pods-PuppyGram-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-PuppyGram/Pods-PuppyGram-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		EE97EEB35060653DE190217A /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-PuppyGramTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		6DC318CF264B284D00964195 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6D5ED596264B65A200CAE92D /* PuppyCell.swift in Sources */,
+				6DC318DB264B284D00964195 /* ViewController.swift in Sources */,
+				6DC31912264B317D00964195 /* Services.swift in Sources */,
+				6D5ED5A6264B943700CAE92D /* UIColor+Pallete.swift in Sources */,
+				6DC318D7264B284D00964195 /* AppDelegate.swift in Sources */,
+				6DC3191B264B416E00964195 /* Puppy.swift in Sources */,
+				6DC318D9264B284D00964195 /* SceneDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6DC318E5264B285100964195 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6DC318EE264B285100964195 /* PuppyGramTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6DC318F0264B285100964195 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6DC318F9264B285100964195 /* PuppyGramUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		6DC318EB264B285100964195 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 6DC318D2264B284D00964195 /* PuppyGram */;
+			targetProxy = 6DC318EA264B285100964195 /* PBXContainerItemProxy */;
+		};
+		6DC318F6264B285100964195 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 6DC318D2264B284D00964195 /* PuppyGram */;
+			targetProxy = 6DC318F5264B285100964195 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		6DC318DC264B284D00964195 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				6DC318DD264B284D00964195 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		6DC318E1264B285000964195 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				6DC318E2264B285000964195 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		6DC318FB264B285100964195 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		6DC318FC264B285100964195 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		6DC318FE264B285100964195 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 028833BD932BFE2AD4497E1C /* Pods-PuppyGram.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = GF728A45JE;
+				INFOPLIST_FILE = PuppyGram/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = kurbs.com.PuppyGram;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		6DC318FF264B285100964195 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4AAF974C9F305F00ACD7A964 /* Pods-PuppyGram.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = GF728A45JE;
+				INFOPLIST_FILE = PuppyGram/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = kurbs.com.PuppyGram;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+		6DC31901264B285100964195 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7CF6CE23F4BEA7B766FBADCF /* Pods-PuppyGramTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = GF728A45JE;
+				INFOPLIST_FILE = PuppyGramTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = kurbs.com.PuppyGramTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/PuppyGram.app/PuppyGram";
+			};
+			name = Debug;
+		};
+		6DC31902264B285100964195 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A7380C6F25B2CF3AECBF45A4 /* Pods-PuppyGramTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = GF728A45JE;
+				INFOPLIST_FILE = PuppyGramTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = kurbs.com.PuppyGramTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/PuppyGram.app/PuppyGram";
+			};
+			name = Release;
+		};
+		6DC31904264B285100964195 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0225A703A5DB41A1D151BD53 /* Pods-PuppyGram-PuppyGramUITests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = GF728A45JE;
+				INFOPLIST_FILE = PuppyGramUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = kurbs.com.PuppyGramUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = PuppyGram;
+			};
+			name = Debug;
+		};
+		6DC31905264B285100964195 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A2F9249CAF9561107C21002B /* Pods-PuppyGram-PuppyGramUITests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = GF728A45JE;
+				INFOPLIST_FILE = PuppyGramUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = kurbs.com.PuppyGramUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = PuppyGram;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		6DC318CE264B284D00964195 /* Build configuration list for PBXProject "PuppyGram" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6DC318FB264B285100964195 /* Debug */,
+				6DC318FC264B285100964195 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6DC318FD264B285100964195 /* Build configuration list for PBXNativeTarget "PuppyGram" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6DC318FE264B285100964195 /* Debug */,
+				6DC318FF264B285100964195 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6DC31900264B285100964195 /* Build configuration list for PBXNativeTarget "PuppyGramTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6DC31901264B285100964195 /* Debug */,
+				6DC31902264B285100964195 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6DC31903264B285100964195 /* Build configuration list for PBXNativeTarget "PuppyGramUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6DC31904264B285100964195 /* Debug */,
+				6DC31905264B285100964195 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 6DC318CB264B284D00964195 /* Project object */;
+}

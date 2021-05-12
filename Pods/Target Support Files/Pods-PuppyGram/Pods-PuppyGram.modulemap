@@ -1,0 +1,6 @@
+framework module Pods_PuppyGram {
+  umbrella header "Pods-PuppyGram-umbrella.h"
+
+  export *
+  module * { export * }
+}
